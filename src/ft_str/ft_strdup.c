@@ -6,7 +6,7 @@
 /*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 18:28:53 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/01 11:32:32 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/01 17:52:50 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 char	*ft_strdup(const char *s1)
 {
-	char    *ptr;
+	char	*ptr;
 
-    ptr = malloc (ft_strlen(s1) * sizeof(char) + 1);
-    if (!ptr)
-    {
-        return (NULL);
-    }
-    ft_strlcpy(ptr, s1, ft_strlen(s1) + 1);
-    return (ptr);
+	ptr = malloc (ft_strlen(s1) * sizeof(char) + 1);
+	if (!ptr)
+	{
+		return (NULL);
+	}
+	ft_strlcpy(ptr, s1, ft_strlen(s1) + 1);
+	return (ptr);
 }

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
+/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 21:36:33 by klaksi            #+#    #+#             */
-/*   Updated: 2022/10/30 14:09:23 by kamelialaks      ###   ########.fr       */
+/*   Updated: 2022/11/01 17:54:13 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len)
 {
 	size_t	i;
 	size_t	j;
-	
+
 	i = 0;
 	j = 0;
 	if (haystack == NULL && len == 0)
@@ -36,8 +36,7 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 			return ((char *)haystack + i);
 		i++;
 		len--;
-		j = 0; 
+		j = 0;
 	}
 	return (NULL);
 }
-

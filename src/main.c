@@ -6,7 +6,7 @@
 /*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 14:38:35 by klaksi            #+#    #+#             */
-/*   Updated: 2022/10/31 17:03:11 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/01 17:46:37 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -191,6 +191,11 @@ int main(void)
 // int fd;
 // fd = 2;
 // ft_putnbr_fd(n, fd);
+
+
+char s1[] = "j'aime les sushis j'aime";
+char set[] = "j'aime";
+printf("%s\n", ft_strtrim(s1, set));
 
 }
 
