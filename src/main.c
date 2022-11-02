@@ -6,12 +6,23 @@
 /*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 14:38:35 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/01 17:46:37 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/01 20:01:00 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
 #include <string.h>
+
+// **** to test ft_strmapi ***
+// char	ft_mine_toupper(unsigned int i, char c)
+// {
+// 	(void)i;
+// 	if (c >= 'a' && c <= 'z')
+// 		return(c - 32);
+// 	return(c);
+
+
+// }
 
 
 int main(void)
@@ -193,12 +204,18 @@ int main(void)
 // ft_putnbr_fd(n, fd);
 
 
-char s1[] = "j'aime les sushis j'aime";
-char set[] = "j'aime";
-printf("%s\n", ft_strtrim(s1, set));
+// char s1[] = "j'aime les sushis j'aime";
+// char set[] = "j'aime";
+// printf("%s\n", ft_strtrim(s1, set));
 
+// char s1[] = "kam";
+// char s2[] = "élia";
+// printf("%s\n", ft_strjoin(s1, s2));
+
+
+	// char const c[] = "mapi";
+	// printf("%s\n", ft_strmapi(c, ft_mine_toupper));
 }
-
 
 
 // int	main(int argc, char **argv)
