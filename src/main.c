@@ -6,7 +6,7 @@
 /*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 14:38:35 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/01 20:01:00 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/11 10:29:11 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,16 @@
 // 		return(c - 32);
 // 	return(c);
 
-
+// void	my_function(unsigned int i, char *c)
+// {
+// 	(void)i;
+// 	if (*c >= 'a' && *c <= 'z')
+// 		*c -= 32;
 // }
 
-
-int main(void)
-{
+// char	*ft_itoa(int n);
+// int main(void)
+// {
 // 	char *str = "Allo!";
 // 	int i = 0;
 // 	while(str[i])
@@ -213,9 +217,24 @@ int main(void)
 // printf("%s\n", ft_strjoin(s1, s2));
 
 
-	// char const c[] = "mapi";
-	// printf("%s\n", ft_strmapi(c, ft_mine_toupper));
-}
+// char const c[] = "mapi";
+// printf("%s\n", ft_strmapi(c, ft_mine_toupper));
+
+
+// char c[] = "striteri";
+// ft_striteri(c, my_function);
+// printf("%s\n", c);
+
+
+	// int i = 123;
+	// printf("%s\n", ft_itoa(i));
+	
+// t_list kam;
+
+// kam = ft_lstnew("bozo");
+// printf("%s", kam);
+
+// }
 
 
 // int	main(int argc, char **argv)
@@ -231,3 +250,97 @@ int main(void)
 // 	else
 // 		printf("ARGS ERROR!\n");
 // }
+
+// typedef struct s_person
+// {
+// 	char *name;
+// 	char *last_name;
+// 	int age;
+// 	struct s_person *next;
+// 	struct s_person *prev;
+// }				t_person;
+
+// int main()
+// {
+// 	t_person person;
+// 	person.name = "Kamelia";
+// 	person.last_name = "Laxi";
+// 	person.age = 21;
+// 	person.next = NULL;
+// 	// person.prev = NULL;
+// 	printf("person Name:: %s\n", person.name);
+	
+// 	t_person person2;
+// 	person2.name = "Rene";
+// 	person2.last_name = "Who-Khows";
+// 	person2.age = 19;
+// 	person2.next = NULL;
+// 	// person2.prev = &person;
+// 	printf("person2 Name:: %s\n", person2.name);
+
+	
+// 	t_person person3;
+// 	person3.name = "Third";
+// 	person3.age = 190;
+// 	person3.next = NULL;
+// 	printf("person3 Name:: %s\n", person2.name);
+	
+// 	person.next = &person2;
+// 	// person2.next = &person3;
+
+	
+	
+// 	printf("person.next->name:: %p\n", person.next);
+// 	printf("person.next->name:: %p\n", &person2);
+	// printf("person2.next->name:: %s\n", person2.next->age);
+	// printf("person2.next->name:: %d\n", person2.next->age);
+	// printf("person2.next->name:: %s\n", person2.next->name);
+	
+	// person
+
+// 	return 0;
+// }
+
+
+
+
+
+// typedef struct s_test
+// {
+// 	char *name;
+// 	char *last_name;
+// 	int age;
+// 	struct s_test *next;
+// 	struct s_test *prev;
+// }				t_test;
+
+
+// void dele(void *param)
+// {
+// 	// char *str = (char *)param;
+// 	// int i = 0;
+// 	// while(str[i++])
+// 	// 	str[i] = '\0';
+// 	ft_bzero(param, ft_strlen(param));
+// }
+
+
+
+// int	main (void)
+// {
+// 	t_list test;
+// 	test.content = "robot";
+
+	
+// 	// t_list test2;
+// 	// test2.content = "robot2";
+	
+// 	// test.next = &test2;
+// 	// printf("%s\n", test.next->content);
+// 	// printf("%s\n", test.content);
+// 	// ft_lstdelone(&test, dele);
+// 	// printf("%s\n", test.next->name);
+	
+// }
+
+
