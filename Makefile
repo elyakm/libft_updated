@@ -9,7 +9,7 @@ HEADER = $(addsuffix .h, $(addprefix includes/, ))
 SRCS_PATH = src/
 
 FTIS = alnum alpha ascii digit print 
-FTLST = add_back add_front last new size delone clear #  iter map 
+FTLST = add_back add_front last new size delone clear iter # map 
 FTMEM = bzero  memchr memcmp memcpy memmove memset calloc
 FTPUT = char_fd str_fd endl_fd nbr_fd 
 FTSTR = chr ncmp lcat lcpy len  nstr rchr dup trim join mapi iteri

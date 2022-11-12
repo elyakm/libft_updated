@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 12:46:06 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/11 13:47:55 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/11 21:24:55 by kamelialaks      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,3 +58,5 @@ int main(void)
 	person2.prev = &person1;
 	printf("%s\n", person2.adress);
 }
+
+
