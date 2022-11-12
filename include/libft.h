@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 17:18:37 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/11 09:16:28 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/11 20:17:08 by kamelialaks      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ t_list 	*ft_lstlast(t_list *lst);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
-
+void 	ft_lstclear(t_list **lst, void (*del)(void*));
 
 
 #endif

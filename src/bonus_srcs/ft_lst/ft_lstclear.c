@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 09:19:36 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/11 15:45:11 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/11 20:14:42 by kamelialaks      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void ft_lstclear(t_list **lst, void (*del)(void*))
 	{
 		while (*lst)
 		{
-
+			temp = *lst->next;
+			ft_lstdelone(*lst, del);
+			*lst = temp;
 		}
 	}
 }
