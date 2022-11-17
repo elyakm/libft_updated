@@ -6,7 +6,7 @@
 /*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 17:18:37 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/13 22:04:02 by kamelialaks      ###   ########.fr       */
+/*   Updated: 2022/11/16 20:55:54 by kamelialaks      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+
 
 typedef struct s_list
 {

@@ -45,14 +45,11 @@ clean:
 
 fclean:		clean
 			-@$(RM) $(NAME)
-# FILE = ""
+
 
 compile: 
-# @read -p "Enter file name: " FILE ;
-# echo $FILE
+
 	@$(CC) $(CFLAGS) $(SRCS) 
-#  $(SRCS_PATH)main.c
-# $($(SRCS_PATH)FILE)
 
 re:			fclean all
 
