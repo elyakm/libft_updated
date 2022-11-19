@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
+/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 08:09:48 by kamelialaks       #+#    #+#             */
-/*   Updated: 2022/11/12 08:48:53 by kamelialaks      ###   ########.fr       */
+/*   Updated: 2022/11/19 11:02:40 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../include/libft.h"
+#include "../../include/libft.h"
 
-t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-    t_list	*new_list;
+	t_list	*new_list;
 	t_list	*new_element;
 
 	if (!lst)

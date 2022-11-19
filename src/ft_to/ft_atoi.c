@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
+/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 20:40:27 by klaksi            #+#    #+#             */
-/*   Updated: 2022/10/30 14:09:23 by kamelialaks      ###   ########.fr       */
+/*   Updated: 2022/11/19 11:23:21 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 int	ft_atoi(const char *str)
 {
 	size_t	i;
-	int	sign;
-	int	result;
-	
+	int		sign;
+	int		result;
+
 	i = 0;
 	sign = 1;
 	result = 0;
@@ -38,6 +38,5 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	return(result * sign);
-	
+	return (result * sign);
 }

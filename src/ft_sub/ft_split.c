@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kamelialaksi <kamelialaksi@student.42.f    +#+  +:+       +#+        */
+/*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 11:13:19 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/13 16:59:49 by kamelialaks      ###   ########.fr       */
+/*   Updated: 2022/11/19 11:21:33 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 #include <stdio.h>
-
 
 static size_t	ft_count(char const *s, char c)
 {
@@ -38,7 +37,7 @@ static size_t	ft_count(char const *s, char c)
 static char	*ft_splitted(char const *s, char c, int *index)
 {
 	char	*str;
-	size_t		i;
+	size_t	i;
 	int		j;
 
 	j = *index;
@@ -57,9 +56,9 @@ static char	*ft_splitted(char const *s, char c, int *index)
 
 char	**ft_split(char const *s, char c)
 {
-	char	**str;
+	char		**str;
 	size_t		i;
-	int		j;
+	int			j;
 
 	if (!s)
 		return (NULL);

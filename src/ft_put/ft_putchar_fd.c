@@ -6,13 +6,13 @@
 /*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:53:14 by klaksi            #+#    #+#             */
-/*   Updated: 2022/10/31 11:54:17 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/19 11:29:21 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 }

@@ -25,8 +25,7 @@ SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)ft_is/ft_is, $(FTIS))) \
 	$(addsuffix .c, $(addprefix $(SRCS_PATH), $(MAIN))) \
 	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_put/ft_put, $(FTPUT))) \
 	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_sub/ft_, $(FTSUB))) \
-
-BONUS_SRCS = $(addsuffix .c, $(addprefix $(SRCS_PATH)bonus_srcs/ft_lst/ft_lst, $(FTLST)))
+	$(addsuffix .c, $(addprefix $(SRCS_PATH)ft_lst/ft_lst, $(FTLST)))
 			 
 
 OBJS		= $(SRCS:.c=.o)

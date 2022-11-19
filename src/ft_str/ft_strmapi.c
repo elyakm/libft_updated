@@ -6,7 +6,7 @@
 /*   By: klaksi <klaksi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 19:21:13 by klaksi            #+#    #+#             */
-/*   Updated: 2022/11/01 19:55:12 by klaksi           ###   ########.fr       */
+/*   Updated: 2022/11/19 11:19:10 by klaksi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*str;
+	char			*str;
 	unsigned int	i;
 
 	if (s == NULL || f == NULL)
@@ -23,11 +23,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!str)
 		return (NULL);
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		str[i] = f(i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
-	return(str);
+	return (str);
 }
